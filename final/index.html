@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Final</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="reset.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="animate.min.css">
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <div id="headerNav">
+         <h3 id="myName">Colin Bruin</h3>
+         <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" style="font-size:20px;font-weight:bold;" class="icon" onclick="navButtonClick()">&#9776;</a>
+            <div class="dropdown-content">
+               <a href="#footer">Contact</a>
+               <a href="#articles">Articles</a>
+               <a href="#website-examples">Examples</a>
+               <a href="#skills">Skills</a>
+               <a href="#about-me-section">About</a>
+            </div>
+         </div>
+      </div>
+      <h1>D<span id="span-header">iscover</span></h1>
+   </header>
+
+   <main>
+      <div id="about-me-section">
+         <h1 class="section-header makeInvisible" style="color:black;">Who I Am</h1>
+
+         <div id="aboutMe">
+            <div id="pictureMe">
+               <img class="makeInvisible picture-visible" src="images/Optimized-Headshot.jpg" alt="Stock Photo">
+            </div>
+            <div id="information">
+               <p class="makeInvisible info-para">
+                  Hi, my name is Colin Bruin and I am a web developer from Zionsville, IN. I have
+                  been developing for roughly about a year and a half now and couldn't consider doing anything else.
+                  I graduated from Zionsville High School in 2012 and attended Indiana University where I majored in Economics.
+                  Although I enjoyed economics and the prospects ahead, I knew something was missing. I took my first computer
+                  course at IU for an easy A, and immediately fell in love with coding. I graduated from IU and then attended
+                  Purdue University where I recieved a certificate in Web Development. This website aims to provide
+                  a more in-depth illustration of my work and my life. It will be continually updated and upgraded so do not be
+                  suprised to find small or even large changes. If you need help with a website, or would just like to learn about web
+                  development, do not hesitate to contact me. For any questions or comments, also do not hesitate to contact me.
+               </p>
+            </div>
+         </div>
+      </div>
+
+      <div id="skills">
+
+         <h1 class="section-header makeInvisible" style="color:rgba(255,255,255,.6)">What I've Learned</h1>
+
+         <div class="row">
+            <div class="skill-animation makeInvisible col" id="html">
+               <div class="skillName" style="background-color:white;color:black;">HTML/CSS - Advanced</div>
+            </div>
+            <div class="skill-animation makeInvisible top col" id="js">
+               <div class="skillName">Javascript - Proficient</div>
+            </div>
+            <div class="skill-animation makeInvisible col" id="php">
+               <div class="skillName" style="background-color:white;color:black;">PHP - Beginner</div>
+            </div>
+         </div>
+
+         <diV class="row">
+            <div class="skill-animation makeInvisible col" id="jquery">
+               <div class="skillName">jQuery - Proficient</div>
+            </div>
+            <div class="skill-animation makeInvisible bottom col" id="python">
+               <div class="skillName" style="background-color:white;color:black;">Python - Proficient</div>
+            </div>
+            <div class="skill-animation makeInvisible col" id="mysql">
+               <div class="skillName">MySQL - Advanced</div>
+            </div>
+         </div>
+      </div>
+
+      <div id="education">
+
+         <h1 class="section-header makeInvisible" style="color:black;">Education</h3>
+
+         <div class="slideshow-container">
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <img src="http://www.lostrunfarm.com/wp-content/uploads/2010/08/zionsville-page-2.jpg" alt="Zionsville City" style="width:100%">
+               <div class="text">Zionsville High School / 2008-2012 / High School Diploma</div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <img src="http://www.iuwc.indiana.edu/wp-content/uploads/2016/02/sample_gates.jpg" alt="Indiana Sample Gates" style="width:100%">
+               <div class="text">Indiana University / 2012-2016 / Bachelors in Economics</div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="http://www.math.purdue.edu/~arshak/f13mwpde/wp-content/uploads/2013/02/hovde-1024x417.jpg" alt="Purdue University" style="width:100%;">
+               <div class="text">Purdue University / 2016-2017 / Certificate of Web Development</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+      </div>
+
+
+      <div id="website-examples">
+         <h1 class="section-header example-header"><span class="site-example-header makeInvisible">Site Examples</span></h1>
+         <div class="example-row">
+            <div class="example-col makeInvisible">
+               <div class="website-example-title">Original Home</div>
+               <img src="images/original-home.png" alt="Home">
+               <p>This was the original home page. It was set up with an information <table>
+                  on the right side. On the left side of the page, images I have taken or appreciated
+                  were added.</p>
+               </table>
+            </div>
+            <div class="example-col makeInvisible">
+               <div class="website-example-title">Original Resume</div>
+               <img src="images/original-resume.png" alt="Resume">
+               <p>This was the original resume page. It was set up in a way that would seem
+                  clean and professional. I got the style inspiration from Wix template.</p>
+            </div>
+            <div class="example-col makeInvisible">
+               <div class="website-example-title">Original Articles</div>
+               <img src="images/original-articles.png" alt="Articles">
+               <p>This was the original articles page that I had set up. I wanted
+                  to create an aesthetic that was light and pleasing. I also added an
+                  up-to-date Twitter feed.</p>
+            </div>
+         </div>
+      </div>
+
+      <div id="articles">
+         <h1 class="section-header makeInvisible" style="color:white;">Articles</h1>
+
+         <div id="article-container">
+            <div class="makeInvisible">
+               <img src="images/ai-ibm.jpg" alt="Apple AI" width="100%">
+               <p class="article-date">January 11, 2017</p>
+               <p class="article-description">A look into the development of artificial intelligence at International Business Systems.</p>
+               <a href="https://stocktraderblog.com/ai-part-1-ibm/" target="_blank" class="read-link">Read More...</a>
+            </div>
+            <div class="makeInvisible">
+               <img src="images/apple-ai.jpg" alt="Apple AI" width="100%">
+               <p class="article-date">March 5, 2017</p>
+               <p class="article-description">Insight into Apple and its plans for artificial intelligence.</p>
+               <a href="https://stocktraderblog.com/artificial-intelligence-pt-2/" target="_blank" class="read-link apple-link">Read More...</a>
+            </div>
+            <div class="makeInvisible"></div>
+         </div>
+      </div>
+   </main>
+
+   <footer id="footer">
+      <div class="left-contact">
+         <h1 id="left-resp-header">Contact Me Today</h1>
+         <form action="mail.php" id="contactForm" method="post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="John Doe (Requried)" minlength="2" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email@example.com (Requried)" required><br>
+
+            <label for="phone">Phone</label><br>
+            <input type="text" id="phone" name="phone" placeholder="888-888-8888" minlength="10"><br>
+
+            <label for="subject">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write something.. (Requried)" style="height:150px" minlength="4" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+         </form>
+
+         <script>
+            $("#contactForm").validate()
+         </script>
+      </div>
+
+      <div class="right right-contact">
+
+         <h1>Contact Me Today</h1>
+         <p id="contact-desc">Feel free to contact me for any questions or comments about the services that I offer. You can either contact me with the form presented, or by reaching me at the proveded contact information.
+         </p>
+
+         <h2>Contact Information</h2>
+         <p class="contact-info">Colin Bruin</p>
+         <p class="contact-info">9149 Woodacre Blvd. South Dr.</p>
+         <p class="contact-info">Indianapolis, IN 46234</p>
+         <p class="contact-info">317-607-9740</p>
+         <p class="contact-info">colinjb23@gmail.com</p>
+
+         <div id="social-media-links">
+            <ul class="social-ul">
+               <li class="social-li"><a class="social-links" href="#">Twitter</a>-</li>
+               <li class="social-li"><a class="social-links" href="#">Facebook</a>-</li>
+               <li class="social-li"><a class="social-links" href="#">LinkedIn</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>

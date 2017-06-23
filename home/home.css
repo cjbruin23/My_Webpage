@@ -1,0 +1,227 @@
+img {
+    position: relative;
+    left: 110px;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+nav {
+    position: relative;
+    left: 0;
+    margin-bottom: 10%;
+}
+ul {list-style-type: none;}
+li {
+	display: inline;
+    position: relative;
+}
+li a {
+	color: white;
+	text-decoration: none;
+}
+p {
+    text-align: justify;
+    margin: 20px;
+    color: white;
+}
+#nameHeader {
+    position: relative;
+    left: 2%;
+    margin-bottom: -20%;
+}
+#div1 {
+    width: 30%;
+    float: left;
+    background-image: url(space.jpg);
+    background-size: contain;
+    height: 100vh;
+}
+#div2 {
+    width: 70%;
+    overflow: hidden;
+}
+#pic1 {
+    position: absolute;
+    left: 27.5%;
+}
+#pic2 {
+    position: absolute;
+    left: 49.5%;
+    top: 48.5%;
+}
+#pic3 {
+    position: absolute;;
+    left: 30%;
+    top: 48.55%;
+}
+#pic4 {
+    position: absolute;
+    left: 75.1%;
+}
+#pic5 {
+    position: absolute;
+    left: 52.7%;
+}
+#pic6 {
+    position: absolute;
+    left: 75.2%;
+    top: 60%;
+}
+#pic7 {
+    position: absolute;
+    left: 30%;
+    top: 76.7%;
+}
+#aboutPara {margin-bottom: 300px;}
+/*Image animations*/
+.image {
+    opacity: 1;
+    transition: 1s ease;
+}
+.middle {
+    transition: 1s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+.middle1 {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+.middle2 {
+    position: absolute;
+    top: 75%;
+    left: 62%;
+}
+.middle3 {
+    position: absolute;
+    top: 63%;
+    left: 39.5%;
+}
+.middle4 {
+    position: absolute;
+    top: 29%;
+    left: 87.5%;
+}
+.middle5 {
+    position: absolute;
+    top: 25%;
+    left: 64%;
+}
+.middle6 {
+    position: absolute;
+    top: 81%;
+    left: 88%;
+}
+.middle7 {
+    position: absolute;
+    top: 88%;
+    left: 39.8%;
+}
+.container:hover .image {opacity: 0.7;}
+.container:hover .middle {opacity: 1;}
+.text {
+    color: black;
+    font-size: 18px;
+    padding: 16px 32px;
+    font-weight: bold;
+}
+
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.icons {padding-right: 2%;}
+.link {
+    font-weight: bold;
+    padding: 0 2%;
+}
+.link:hover {color: silver;}
+.link:before {
+    position: absolute;
+    bottom: 0;
+    left: -.5px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out .3s;
+    background-color: white;
+}
+.link:hover:before {
+    visibility: visible;
+    transform: scaleX(.8);
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+         url('socicon.woff') format('woff'),
+         url('socicon.ttf') format('truetype'),
+         url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    left: 110px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: #3D71B4;
+}
+.soc-icon-last{margin:0 !important;}
+.soc-twitter {background-color: #4da7de;}
+.soc-twitter:before {content:'\e040';}
+.soc-facebook {background-color: #3e5b98;}
+.soc-facebook:before {content:'\e041';}
+.soc-linkedin {background-color: #3371b7;}
+.soc-linkedin:before {content:'\e049';}
+.soc-wordpress {background-color: white;}
+.soc-wordpress:before {content:'\e058';}
