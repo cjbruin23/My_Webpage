@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
    $(".mySlides:nth-of-type(1)").css("display", "block");
    $(".dot:nth-of-type(1)").addClass('active');
    $(".social-li:first").css("margin-left", "0");
