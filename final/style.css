@@ -334,16 +334,13 @@ header h1 {
    overflow-x: hidden;
 }
 #website-examples img {
-   width: 75%;
+   max-width: 75%;
+   height: 205px;
    display: block;
    margin: auto;
 }
-.example-row a:link {
-   text-decoration: none;
-}
-.example-row a {
-   color: black;
-}
+.example-row a:link {text-decoration: none;}
+.example-row a {color: black;}
 .website-example-title {padding-bottom: 10px;}
 .example-header {margin-bottom: 125px;}
 .example-row {
