@@ -1,5 +1,8 @@
+/*General selectors*/
 html {overflow-x: hidden;}
 main {margin-bottom: 100px;}
+
+/*Header styles*/
 header {
    height: 100vh;
    width: 100%;
@@ -18,13 +21,20 @@ header::after {
   position: absolute;
   z-index: -1;
 }
+header h1 {
+   position: relative;
+   top: 45%;
+   text-align: center;
+   font-size: 4.5em;
+   color: white;
+   font-family: 'Roboto', sans-serif;
+}
 #headerNav {
    width: 100%;
    background-color: rgba(255,255,255, .9);
    height: 75px;
    position: fixed;
    z-index: 10;
-   /*padding-right: 25px;*/
 }
 #myName {
    font-family: 'Roboto', sans-serif;
@@ -33,13 +43,9 @@ header::after {
    top: 20px;
    left: 3.5%;
 }
-header h1 {
+.icon {
    position: relative;
-   top: 45%;
-   text-align: center;
-   font-size: 4.5em;
-   color: white;
-   font-family: 'Roboto', sans-serif;
+   bottom: 2px;
 }
 .topnav {
    overflow: hidden;
@@ -58,25 +64,18 @@ header h1 {
    font-family: 'Open Sans', sans-serif;
    font-size: 1.15em;
 }
-.topnav a:hover {
-   color: white;
-}
+.topnav a:hover {color: white;}
 .topnav .icon {
    display: none;
    color: black;
 }
-.icon {
-   position: relative;
-   bottom: 2px;
-}
+
 @media screen and (max-width: 800px) {
    .dropdown-content {
       display: none;
       overflow: hidden;
    }
-   .topnav a {
-      font-size: .9em;
-   }
+   .topnav a {font-size: .9em;}
    .topnav a.icon {
       float: right;
       display: block;
@@ -90,27 +89,21 @@ header h1 {
 }
 
 /*About Me Section*/
-#about-me-section {
-   background-color: #f3f3f3;
-}
-#about-me-section h1 {
-   margin-bottom: 100px;
-}
+#about-me-section {background-color: #f3f3f3;}
+#about-me-section h1 {margin-bottom: 100px;}
 #pictureMe, #information {
    width: 100%;
    overflow: visible;
    height: 450px;
 }
-#pictureMe {
-   margin-bottom: 30px;
-}
+#information p {text-align: center;}
+#pictureMe {margin-bottom: 30px;}
 #pictureMe img {
    display: block;
    margin: auto;
    width: 100%;
    height: 100%;
 }
-#information p {text-align: center;}
 
 @media screen and (min-width: 500px) {
    #pictureMe, #information {
@@ -211,9 +204,7 @@ header h1 {
    width: 30%;
 }
 @media (max-width: 715px) {
-   .row {
-      display: inline;
-   }
+   .row {display: inline;}
    .col {
       width: 80%;
       margin-left: auto;
@@ -223,13 +214,8 @@ header h1 {
 
 /*Education*/
 #education {
-   /*background-image: url(http://www.beechcraft.com/king_air_transformation/img/sky.jpg);*/
    background-repeat: no-repeat;
    background-size: cover;
-}
-#education-h1 {
-   width: 100%;
-   text-align: center;
 }
 
 /*Education Slideshow*/
@@ -243,11 +229,11 @@ header h1 {
   margin-right: auto;
   margin-top: 120px;
 }
+.mySlides {display: none;}
+.mySlides img {height: 300px;}
 @media screen and (max-width: 775px) {
    .slideshow-container {width: 100%;}
 }
-.mySlides {display: none;}
-.mySlides img {height: 300px;}
 @media screen and (min-width: 800px) {
    .mySlides img {height: 600px;}
 }
@@ -463,20 +449,14 @@ header h1 {
 }
 
 /*Footer*/
-footer {
-   margin-top: -100px;
-}
-.right-contact {
-   display: none;
-}
+footer {margin-top: -100px;}
+.right-contact {display: none;}
 #left-resp-header {
    font-size: 1.5em;
    text-align: center;
    padding: 35px 0;
 }
-.left-contact {
-   margin-left: 30px;
-}
+.left-contact {margin-left: 30px;}
 input, textarea {
    margin-bottom: 10px;
    width: 60%;
@@ -484,15 +464,9 @@ input, textarea {
 
 
 @media screen and (min-width: 750px) {
-   form {
-      margin-left: 10%;
-   }
-   #left-resp-header {
-      display: none;
-   }
-   .right-contact, .left-contact {
-      margin-top: 50px;
-   }
+   form {margin-left: 10%;}
+   #left-resp-header {display: none;}
+   .right-contact, .left-contact {margin-top: 50px;}
    .right-contact {
       display: block;
       float: right;
@@ -565,8 +539,6 @@ input, textarea {
    .left-contact, .right-contact {
       margin-bottom: 25px;
       padding-left: 10%;
-   }
-   .right-contact {
    }
 }
 
